@@ -40,5 +40,6 @@ app.use(users.routes(), users.allowedMethods())
 app.on('error', (err, ctx) => {
   console.error('server error', err, ctx)
 });
-
+console.log('running')
+app.listen(3033)
 module.exports = app
